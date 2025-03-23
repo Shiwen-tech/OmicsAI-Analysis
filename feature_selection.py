@@ -9,8 +9,8 @@ data = pd.read_csv("omics_data.csv")
 
 # Preprocess data: Remove non-numeric columns and handle missing values
 data = data.dropna()
-X = data.iloc[:, 1:-1]  # Select features (excluding first column if it's an ID)
-y = data.iloc[:, -1]  # Select target (last column, assuming it's labels)
+X = data.iloc[:, 1:-1]  
+y = data.iloc[:, -1]  
 
 # Standardize the dataset
 scaler = StandardScaler()
